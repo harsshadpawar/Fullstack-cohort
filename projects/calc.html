@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #calcTable {
+            margin: 0 auto;
+            text-align: center;
+        }
+        button {
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+        }
+        #resultText {
+            width: 200px;
+            height: 50px;
+            font-size: 24px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <script src="calc.js"></script>
+    <table id-"clacTable" width="200px" height="300px" border="1">
+        <tr>
+            <td colspan="4" align="right" height="40px">
+                <input height="50px" type="text" id="display" readonly/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="right"><button id="clearDisplay" width="150px" onclick="deleteLast()">Del</button></td>
+            <td colspan="1" align="right"><button id="clearDisplay" width="150px" onclick="clearDisplay()">AC</button></td>
+        </tr>
+        <tr>
+            <td><button id="Btn7" onclick="appendToDisplay('7')">7</button></td>
+            <td><button id="Btn8" onclick="appendToDisplay('8')">8</button></td>
+            <td><button id="Btn9" onclick="appendToDisplay('9')">9</button></td>
+            <td><button id="divisionBtn" onclick="appendToDisplay('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button id="Btn4" onclick="appendToDisplay('4')">4</button></td>
+            <td><button id="Btn5" onclick="appendToDisplay('5')">5</button></td>
+            <td><button id="Btn6" onclick="appendToDisplay('6')">6</button></td>
+            <td><button id="multiplyBtn" onclick="appendToDisplay('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button id="Btn1" onclick="appendToDisplay('1')">1</button></td>
+            <td><button id="Btn2" onclick="appendToDisplay('2')">2</button></td>
+            <td><button id="Btn3" onclick="appendToDisplay('3')">3</button></td>
+            <td><button id="subtractBtn" onclick="appendToDisplay('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button id="Btn0" onclick="appendToDisplay('0')">0</button></td>
+            <td><button id="decimalBtn" onclick="appendToDisplay('.')">.</button></td>
+            <td><button id="answerBtn" width="100px" onclick="calculate()">=</button></td>
+            <td><button id="additionBtn" onclick="appendToDisplay('+')">+</button></td>
+        </tr>
+    </table>
+</body>
+</html>

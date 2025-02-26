@@ -1,0 +1,8 @@
+{
+  "editor.fontSize": 14,
+  "editor.minimap.sectionHeaderFontSize": 12,
+  "debug.console.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "scm.inputFontSize": 14,
+  "quokka.fontSize": 14
+}
