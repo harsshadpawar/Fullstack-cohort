@@ -1,2 +1,1 @@
-# Fullstack-cohort
-Web Development Cohort
+# My Fullstack Cohort Projects
